@@ -1,0 +1,31 @@
+.btn.btn-se {
+    color: #fff;
+    background-color: #132a4f;
+    border-color: #132a4f;
+    border-radius: 0;
+    padding: .575rem 2rem!important;
+    font-size: 0.80rem!important;
+    font-weight: 300!important;
+    &:hover {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #091d3d;
+        border-color: #ffffff;
+    }
+}
+
+.btn.btn-se-light {
+    color: #23253e;
+    background-color: rgba(215, 227, 255, 0.41);
+    border-color: rgba(215, 227, 255, 0.41);
+    border-radius: 0;
+    padding: .575rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    &:hover {
+        color: #23253e;
+        text-decoration: none;
+        background-color: rgba(215, 227, 255, 0.41);
+        border-color: #23253e;
+    }
+}
