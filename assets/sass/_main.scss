@@ -1693,6 +1693,7 @@ footer {
 				border-right: 0;
 			}
 			a {
+				font-size: 16px;
 				&.nav-link {
 					color: $secondary;
 				}
@@ -1748,71 +1749,6 @@ footer {
 /********* Super Investors Css *********/
 
 .super-investors-section {
-	.sub-cat-section {
-		background: rgba(68, 63, 65, 0.48);
-		font-size: 10px;
-		letter-spacing: 1px;
-	}
-	.time-section {
-		font-size: 0.7rem;
-		color: #8996ab;
-		letter-spacing: 1px;
-	}
-	.title-section {
-		color: #2b2850;
-		line-height: 1.5;
-		@include media-breakpoint-up(md) {
-			min-height: 70px;
-			max-height: 70px;
-			overflow: hidden;
-		}
-	}
-	.content-section {
-		color: #727272;
-		line-height: 1.5;
-		@include media-breakpoint-up(md) {
-			min-height: 65px;
-			max-height: 65px;
-			overflow: hidden;
-		}
-	}
-	.blog-content-section {
-		color: #4d4d4d;
-	}
-	.author-details-section {
-		line-height: 1.3;
-		.author-name-section {
-			color: #2b2850;
-		}
-		.author-company-section {
-			color: #727272;
-		}
-	}
-	.tag-section {
-		display: inline;
-		color: #598cfb;
-		font-size: 11px;
-		background-color: #edf3ff;
-		border: solid 1px #598cfb;
-		padding: 7px 12px;
-		border-radius: 4px;
-		line-height: 1.3;
-		&.blue-tag {
-			color: #598cfb;
-			background-color: #edf3ff;
-			border: solid 1px #598cfb;
-		}
-		&.pink-tag {
-			color: #e60079;
-			background-color: #ffedf7;
-			border: solid 1px #e60079;
-		}
-		&.green-tag {
-			color: #3eb049;
-			background-color: rgba(62, 176, 73, 0.12);
-			border: solid 1px #3eb049;
-		}
-	}
 	#super-investors-slider {
 		.slick-list {
 			padding: 0 0 20px;
@@ -1875,9 +1811,6 @@ footer {
 
 /****** a href Hover *****/
 .super-investors-section {
-	video {
-		object-fit: cover;
-	}
 	.card-group-item {
 		a {
 			&:hover{
@@ -1886,4 +1819,40 @@ footer {
 			}
 		}
 	}
+}
+
+
+/********* Related Stocks Table Css *********/
+.tbl-related-stocks {
+	thead {
+		tr {
+			th {
+				padding-bottom: 25px;
+			}
+		}
+	}
+	tbody {
+		tr {
+			transition: all .5s;
+			&:hover {
+				background-color: transparent;
+				box-shadow: 0px 1px 20px rgba(1, 33, 58, 0.06);
+			}
+			&:first-child {
+				th,
+				td {
+					border-top: none;
+				}
+			}
+			th,
+			td {
+				border-top: 0.5px solid rgba(223, 223, 236, 0.7);
+				vertical-align: middle;
+				&:last-child {
+					text-align: center;
+				}
+			}
+		}
+	}
+
 }
