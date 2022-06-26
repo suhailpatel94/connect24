@@ -14,8 +14,6 @@
     <link href="assets/plugins/slick/slick.css" rel="stylesheet" />
     <script src="assets/js/font-awesome-5.js"></script>
     <link href="assets/plugins/aos/aos.css" rel="stylesheet" />
-    <link href="assets/plugins/datepicker/bootstrap-datepicker.css" rel="stylesheet" />
-    <link href='assets/plugins/cover-slider/css/jquery-responsiveGallery.css' rel='stylesheet' />
 </head>
 
 <body>
