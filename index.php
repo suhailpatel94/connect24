@@ -71,8 +71,127 @@
                         <div class="row">
                             <div class="col-md-8">
 
-                                <!-- Related Stocks Card -->
+                                <!-- Analysts’ Ratings Card -->
                                 <div class="bg-white custom-border rounded-lg p-4 mt-2">
+
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h4 class="title-color mb-0">Analysts' Ratings</h4>
+                                        <a href="javascript:void(0);" class="custom-bg-light-green py-2 px-4 border-radius-10 text-center no-underline">
+                                            <h5 class="custom-light-green mb-0">Strong Buy</h5>
+                                        </a>
+                                    </div>
+
+                                    <p class="title-color h6 font-smooth">Based on <span class="sfpro-bold">50 analysts</span> giving stock ratings to Apple Inc in the past 3 months</p>
+
+                                    <div class="custom-margin-top">
+                                        
+                                        <div class="row justify-content-between mb-4">
+                                            <div class="col-md-2 align-self-center">
+                                                <h5 class="font-18 mb-0 title-color">Strong buy</h5>
+                                            </div>
+                                            <div class="col-md-8 align-self-center text-right">
+                                                <div class="custom-progress">
+                                                    <!--<div class="title">
+                                                        <h3>web design</h3>
+                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
+                                                    </div>-->
+                                                    <div class="barline">
+                                                        <div class="countbar" data-percentBarline="8"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 align-self-center text-right">
+                                                <p class="font-18 mb-0 title-color">8.00%</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-between mb-4">
+                                            <div class="col-md-2 align-self-center">
+                                                <h5 class="font-18 mb-0 title-color">Buy</h5>
+                                            </div>
+                                            <div class="col-md-8 align-self-center text-right">
+                                                <div class="custom-progress">
+                                                    <!--<div class="title">
+                                                        <h3>web design</h3>
+                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
+                                                    </div>-->
+                                                    <div class="barline">
+                                                        <div class="countbar" data-percentBarline="7"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 align-self-center text-right">
+                                                <p class="font-18 mb-0 title-color">7.40%</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-between mb-4">
+                                            <div class="col-md-2 align-self-center">
+                                                <h5 class="font-18 mb-0 title-color">Hold</h5>
+                                            </div>
+                                            <div class="col-md-8 align-self-center text-right">
+                                                <div class="custom-progress">
+                                                    <!--<div class="title">
+                                                        <h3>web design</h3>
+                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
+                                                    </div>-->
+                                                    <div class="barline">
+                                                        <div class="countbar hold" data-percentBarline="1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 align-self-center text-right">
+                                                <p class="font-18 mb-0 title-color">0.00%</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-between mb-4">
+                                            <div class="col-md-2 align-self-center">
+                                                <h5 class="font-18 mb-0 title-color">Sell</h5>
+                                            </div>
+                                            <div class="col-md-8 align-self-center text-right">
+                                                <div class="custom-progress">
+                                                    <!--<div class="title">
+                                                        <h3>web design</h3>
+                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
+                                                    </div>-->
+                                                    <div class="barline">
+                                                        <div class="countbar sell" data-percentBarline="1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 align-self-center text-right">
+                                                <p class="font-18 mb-0 title-color">0.00%</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-between mb-4">
+                                            <div class="col-md-2 align-self-center">
+                                                <h5 class="font-18 mb-0 title-color">Strong Sell</h5>
+                                            </div>
+                                            <div class="col-md-8 align-self-center text-right">
+                                                <div class="custom-progress">
+                                                    <!--<div class="title">
+                                                        <h3>web design</h3>
+                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
+                                                    </div>-->
+                                                    <div class="barline">
+                                                        <div class="countbar strong-sell" data-percentBarline="1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 align-self-center text-right">
+                                                <p class="font-18 mb-0 title-color">0.00%</p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+
+                                </div>
+
+                                <!-- Related Stocks Card -->
+                                <div class="bg-white custom-border rounded-lg p-4 custom-margin-top">
 
                                     <h2 class="title-color">Related Stocks</h2>
 

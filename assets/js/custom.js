@@ -65,3 +65,39 @@ $('#super-investors-slider').slick({
         }
     ]
 });
+
+
+let percentShow = document.querySelectorAll('.percentshow');
+let getPercentShow = Array.from(percentShow);
+
+let percent = document.querySelectorAll('.countbar');
+let getPercent = Array.from(percent);
+
+getPercentShow.map((viewPercen) => {
+    let startCount = 0;
+    let progressPercentCount = () => {
+        startCount ++;
+        viewPercen.innerHTML = `${startCount}%`;
+        if(startCount == viewPercen.dataset.percentnumber){
+            clearInterval(percentStop);
+        }
+    }
+    let percentStop = setInterval(() => {
+        progressPercentCount();
+    },20)
+})
+
+getPercent.map((viewline) => {
+    console.log(viewline.dataset.percentbarline)
+    let countStart = 0;
+    let progressbar = () => {
+        countStart ++;
+        viewline.style.width = `${countStart}%`;
+        if(countStart == viewline.dataset.percentbarline) {
+            clearInterval(viewlineStop);
+        }
+    }
+    let viewlineStop = setInterval(() => {
+        progressbar();
+    },20)
+})
