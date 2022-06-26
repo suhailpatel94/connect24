@@ -14,7 +14,6 @@ body {
 }
 
 
-
 /****** Banner Section ******/
 .banner-section {
 	&.home-banner-section {
@@ -28,7 +27,6 @@ body {
 
 
 /**************** Site Preloader *****************/
-
 .site-preloader {
     align-items: center;
     display: flex;
@@ -186,7 +184,6 @@ body {
 
 
 /************ Slick Dots Css *************/
-
 .slick-dots {
     position: absolute;
     bottom: 0;
@@ -256,7 +253,6 @@ body {
 
 
 /**************** Tabs Section Css ****************/
-
 .custom-nav-tabs-section {
 	position: absolute;
 	top: -30px;
@@ -283,7 +279,6 @@ body {
 
 
 /**************** Custom Tooltip Css ****************/
-
 .custom-tooltip {
     position: relative;
     display: flex;
@@ -321,11 +316,18 @@ body {
 
 
 /********* Super Investors Css *********/
-
 .super-investors-section {
 	#super-investors-slider {
 		.slick-list {
 			padding: 0 0 20px;
+			.card-group-item {
+				a {
+					&:hover{
+						color: inherit!important;
+						text-decoration: none!important;
+					}
+				}
+			}
 		}
 		button {
 			&.slick-arrow {
@@ -378,18 +380,6 @@ body {
 						}
 					}
 				}
-			}
-		}
-	}
-}
-
-/****** a href Hover *****/
-.super-investors-section {
-	.card-group-item {
-		a {
-			&:hover{
-				color: inherit!important;
-				text-decoration: none!important;
 			}
 		}
 	}
