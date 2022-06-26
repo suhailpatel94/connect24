@@ -108,6 +108,34 @@ $('#articles-listing-slider').slick({
     ]
 });
 
+//Super Investors Slider JS
+$('#super-investors-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
 //Blogs Slider JS
 $('#blogs-listing-slider').slick({
     slidesToShow: 3,

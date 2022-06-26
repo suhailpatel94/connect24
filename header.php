@@ -65,40 +65,56 @@
 
 <header class="sustaineverse-navbar">
     <nav class="navbar navbar-expand-md py-md-0" id="mainNav">
-        <div class="container-lg justify-content-md-around" data-aos="fade-in">
-            <a class="navbar-brand" href="index.php">
-                <img src="./public/images/png/logo.png" alt="SustainEverse Logo" width="200" title="SustainEverse Logo" />
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ham-icon"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="navbar-collapse collapse justify-content-start align-self-start" id="navbarResponsive" style="height: 80px;">
-                <ul class="navbar-nav gotham-book justify-content-around justify-content-lg-center h-100 w-100">
-                    
-                    <li <?php if($actual_link=="index.php"){echo "class= 'active home'";}else{echo "class= 'home'";} ?>>
-                        <a class="nav-link" href="index.php"><span>Home</span></a>
-                    </li>
-                    <li <?php if($actual_link=="blogs.php" || $actual_link=="blog-details.php"){echo "class= 'active blog'";}else{echo "class= 'blog'";} ?>>
-                        <a class="nav-link" href="blogs.php"><span>Blogs</span></a>
-                    </li>
-                    <li <?php if($actual_link=="articles.php" || $actual_link=="article-details.php"){echo "class= 'active articles'";}else{echo "class= 'articles'";} ?>>
-                        <a class="nav-link" href="articles.php"><span>Articles</span></a>
-                    </li>
-                    <li <?php if($actual_link=="news.php" || $actual_link=="news-details.php"){echo "class= 'active news'";}else{echo "class= 'news'";} ?>>
-                        <a class="nav-link" href="news.php"><span>News</span></a>
-                    </li>
-                    <li <?php if($actual_link=="case-studies.php" || $actual_link=="case-study-details.php"){echo "class= 'active case-studies'";}else{echo "class= 'case-studies'";} ?>>
-                        <a class="nav-link" href="case-studies.php"><span>Case Studies</span></a>
-                    </li>
-                    <li <?php if($actual_link=="research-papers.php" || $actual_link=="research-papers-details.php"){echo "class= 'active research-papers'";}else{echo "class= 'research-papers'";} ?>>
-                        <a class="nav-link" href="research-papers.php"><span>Research Papers</span></a>
-                    </li>
-                    <li <?php if($actual_link=="ebooks.php" || $actual_link=="ebook-details.php"){echo "class= 'active ebooks'";}else{echo "class= 'ebooks'";} ?>>
-                        <a class="nav-link" href="ebooks.php"><span>eBooks</span></a>
-                    </li>
-                </ul>
+        <div class="justify-content-md-around aos-init aos-animate px-2 w-100" data-aos="fade-in">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- Logo -->
+                    <a class="navbar-brand pb-2" href="index.php">
+                        <img src="./public/images/png/logo.png" alt="SustainEverse Logo" width="200" title="SustainEverse Logo" />
+                    </a>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <!-- Explore -->
+                    <div class="align-self-center">
+                        <a href="javascript:void(0);" class="btn btn-se rounded-pill"><i class="fas fa-bars"></i> Explore</a>
+                    </div>
+
+                    <!-- Custom Select -->
+                    <div class="align-self-center">
+                        <select class="form-control form-control-sm border-0 text-primary header-custom-select">
+                            <option>Halal Screener</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <!-- Search Box -->
+                    <div class="form-group has-search mb-0">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search any stock globally">
+                    </div>  
+                </div>
+                <div class="col-md-3 d-flex justify-content-end">
+                    <!-- Join -->
+                    <div class="align-self-center">
+                        <a href="javascript:void(0);" class="btn btn-se-outline rounded-pill">Join</a>
+                    </div>
+
+                    <!-- Get the App -->
+                    <div class="align-self-center ml-2">
+                        <a href="javascript:void(0);" class="btn btn-se rounded-pill">Get the App</a>
+                    </div>
+                </div>
             </div>
-            <a href="javascript:void(0);" class="btn btn-se sign-in-btn d-none d-md-block">Sign In</a>
+
+
+
+
+
+
+
+
+
         </div>
     </nav>
 </header>

@@ -1,11 +1,11 @@
 .btn.btn-se {
     color: #fff;
-    background-color: #132a4f;
-    border-color: #132a4f;
+    background-color: $primary;
+    border-color: $primary;
     border-radius: 0;
-    padding: .575rem 2rem!important;
-    font-size: 0.80rem!important;
-    font-weight: 300!important;
+    padding: .575rem 2rem;
+    font-size: 0.80rem;
+    font-weight: 300;
     &:hover {
         color: #ffffff;
         text-decoration: none;
@@ -15,17 +15,45 @@
 }
 
 .btn.btn-se-light {
-    color: #23253e;
-    background-color: rgba(215, 227, 255, 0.41);
-    border-color: rgba(215, 227, 255, 0.41);
+    color: $primary;
+    background-color: #F3F4F5;
+    border-color: #DFDFEC;
     border-radius: 0;
     padding: .575rem 1.5rem;
     font-size: 0.875rem;
     font-weight: 300;
     &:hover {
-        color: #23253e;
+        color: $primary;
         text-decoration: none;
-        background-color: rgba(215, 227, 255, 0.41);
-        border-color: #23253e;
+        background-color: #DFDFEC;
+        border-color: #DFDFEC;
+    }
+}
+
+.btn.btn-se-outline {
+    color: $primary;
+    background-color: $white;
+    border-color: #ededed;
+    border-radius: 0;
+    padding: .5rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
+
+.btn.btn-se-dd-outline {
+    color: $primary;
+    background-color: $white;
+    border: 0;
+    padding: .5rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    &:hover {
+        text-decoration: none;
     }
 }

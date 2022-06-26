@@ -1,99 +1,54 @@
-/************************ Gotham Font *********************/
-/* Gotham Thin Font */
+/************************ SF Pro Display Font *********************/
+/* SF Pro Display Regular */
 @font-face {
-  font-family: 'Gotham-Thin';
-  src: url('../../assets/fonts/gotham/Gotham-Thin.otf');
+  font-family: 'SF-Pro-Regular';
+  src: url('../../assets/fonts/sf-pro-display/SF-PRO-DISPLAY-REGULAR.OTF');
 }
 
-/* Gotham Medium Font */
+/* SF Pro Display Bold */
 @font-face {
-  font-family: 'Gotham-Medium';
-  // src: url('../../assets/fonts/gotham/GothamMedium_1.ttf');
-  src: url('../../assets/fonts/gotham/Gotham-Medium.otf');
+  font-family: 'SF-Pro-Bold';
+  src: url('../../assets/fonts/sf-pro-display/SF-PRO-DISPLAY-BOLD.OTF');
 }
 
-/* Gotham Bold Font */
+/* SF Pro Display Medium */
 @font-face {
-  font-family: 'Gotham-Bold';
-  src: url('../../assets/fonts/gotham/Gotham-Bold.otf');
+  font-family: 'SF-Pro-Medium';
+  src: url('../../assets/fonts/sf-pro-display/SF-PRO-DISPLAY-MEDIUM.OTF');
 }
 
-/* Gotham Black Font */
+.sfpro-regular {
+  font-family: 'SF-Pro-Regular';
+}
+
+.sfpro-bold {
+  font-family: 'SF-Pro-Bold';
+}
+
+.sfpro-medium {
+  font-family: 'SF-Pro-Medium';
+}
+
+/************************ Montserrat Font *********************/
+/* Montserrat Regular */
 @font-face {
-  font-family: 'Gotham-Black';
-  src: url('../../assets/fonts/gotham/Gotham-Black.otf');
+  font-family: 'Montserrat-Regular';
+  src: url('../../assets/fonts/montserrat/Montserrat-Regular.ttf');
 }
 
-/* Gotham Book Font */
+/* Montserrat Semi-Bold */
 @font-face {
-  font-family: 'Gotham-Book';
-  src: url('../../assets/fonts/gotham/Gotham-Book.otf');
+  font-family: 'Montserrat-SemiBold';
+  src: url('../../assets/fonts/montserrat/Montserrat-SemiBold.ttf');
 }
 
-.gotham-thin {
-  font-family: 'Gotham-Thin';
+.mont-regular {
+  font-family: 'Montserrat-Regular';
 }
 
-.gotham-medium {
-  font-family: 'Gotham-Medium';
+.mont-semibold {
+  font-family: 'Montserrat-SemiBold';
 }
-
-.gotham-bold {
-  font-family: 'Gotham-Bold';
-}
-
-.gotham-black {
-  font-family: 'Gotham-Black';
-}
-
-.gotham-book {
-  font-family: 'Gotham-Book';
-}
-
-
-/************************ Lato Font *********************/
-/* Lato Regular Font */
-@font-face {
-  font-family: 'Lato-Regular';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../../assets/fonts/lato/Lato-Regular.ttf');
-}
-
-/* Lato Bold Font */
-@font-face {
-  font-family: 'Lato-Bold';
-  src: url('../../assets/fonts/lato/Lato-Bold.ttf');
-}
-
-/* Lato Bold-Italic Font */
-@font-face {
-  font-family: 'Lato-BoldItalic';
-  src: url('../../assets/fonts/lato/Lato-BoldItalic.ttf');
-}
-
-/* Lato Medium Font */
-@font-face {
-  font-family: 'Lato-Medium';
-  src: url('../../assets/fonts/lato/Lato-Medium.ttf');
-}
-
-.lato-regular {
-  font-family: 'Lato-Regular';
-}
-
-.lato-bold {
-  font-family: 'Lato-Bold';
-}
-
-.lato-bolditalic {
-  font-family: 'Lato-BoldItalic';
-}
-
-.lato-medium {
-  font-family: 'Lato-Medium';
-}
-
 
 html,body{
   height: 100%;
@@ -102,17 +57,14 @@ html,body{
 body{
   line-height: 1;
   font-size: .875rem;
-  font-family: 'Lato-Regular';
+  //font-family: 'Lato-Regular';
+  font-family: 'SF-Pro-Regular';
   opacity: 1;
   transition: 1s opacity;
   // font-weight: 600;
   line-height: 24px;
 	color: #333;
 	background-color: $white;
-}
-
-.btn {
-  font-family: 'Gotham-Medium';
 }
 
 ::-moz-selection {
@@ -155,39 +107,68 @@ body{
   line-height: 2.5!important;
 }
 
-.bg-yellow {
-  background: #fedd02;
-}
 
-.bg-navy-blue {
-	background-color: #1b3e76!important;
-}
-
-.bg-grey-light {
-  background-color: #eef0f9!important;
-}
-
-.bg-grey-dark {
-  background-color: #f2f6fd!important;
-}
+/********** New Css **********/
 
 .title-color {
-  color: #2b2850!important;
+  color: #212121!important;
 }
 
-.para-color {
-  color: #4d4d4d!important;
+.font-20 {
+  font-size: 1.25rem!important;
 }
 
-.footer-bg-color {
-  background: #3ea547!important;
+.font-36 {
+  font-size: 2.25rem!important;
 }
 
-.custom-link {
-  &:hover {
-    text-decoration: none!important;
-  }
+.custom-bg-light-green {
+  background-color: rgba(39, 209, 127, 0.1);
 }
+
+.custom-light-green {
+  color: #27D17F;
+}
+
+.custom-bg-light-red {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C70707;
+}
+
+.custom-light-red {
+  color: #C70707;
+}
+
+.custom-border {
+  border: 1px solid #DFDFEC!important;
+}
+
+.border-radius-6 {
+  border-radius: 6px!important;
+}
+
+.border-radius-10 {
+  border-radius: 10px!important;
+}
+
+.border-radius-15 {
+  border-radius: 15px!important;
+}
+
+.custom-margin-top {
+  margin-top: 34px!important;
+}
+
+.custom-margin-bottom {
+  margin-bottom: 34px!important;
+}
+
+.font-smooth {
+  //-webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+/********** New Css Ends **********/
+
 
 select {
   &.custom-select-arrow {
@@ -213,6 +194,10 @@ select {
     text-decoration: none!important;
     color: initial!important;
   }
+}
+
+.underline {
+  text-decoration: underline!important;
 }
 
 /* width */
@@ -290,64 +275,7 @@ a, button {
   }
 }
 
-.bg-footer {
-  background: #193667!important;
+.custom-link {
+  color: #0A2540;
+  font-family: 'Montserrat-Regular';
 }
-
-.banner-section-auto {
-  height: auto;
-}
-
-.banner-section-full {
-  height: 100%;
-}
-
-@include media-breakpoint-only(lg) {
-  .banner-section-medium {
-    height: 535px;
-  }
-  .partner-banner {
-    height: 477px;
-  }
-}
-
-@include media-breakpoint-only(md) {
-  .home-banner-section {
-    &.banner-section-medium {
-      height: 575px;
-    }
-  }
-  .btn-se {
-    &.sign-in-btn {
-        font-size: 0.7rem!important;
-    }
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .banner-section-small {
-    height: 300px;
-  }
-}
-
-@include media-breakpoint-only(xl) {
-  .banner-section-medium {
-    height: 585px;
-  }
-  .partner-banner {
-    height: 525px;
-  }
-}
-
-.float-contact{
-	width:60px;
-	height:60px;
-	bottom:40px;
-  right:10px;
-  font-size: 1.3rem;
-  box-shadow: 3px 4px 3px #999;
-  .my-float-contact{
-    margin-top:20px;
-  }
-}
-
