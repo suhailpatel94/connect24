@@ -4,7 +4,7 @@ AOS.init({
     once: true
 });
 
-/******************Loader JS********************/
+/****************** Loader JS ********************/
 $(window).on ('load', function (){
     // Site Preloader
     $('#site-preloader').fadeOut(); // will first fade out the loading animation
@@ -12,29 +12,23 @@ $(window).on ('load', function (){
     $('body').delay(350).css({'overflow':'visible'});
 });
 
-/******************Document Ready JS********************/
-$(document).ready(function() {
-
-    //Scroll To Top JS
-    $(window).on( 'scroll', function(){
-        if ($(window).scrollTop() > 600) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-
-    $(document.body).on('click', '.scrollToTop', function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    });
-    
+/****************** Scroll To Top JS ********************/
+$(window).on( 'scroll', function(){
+    if ($(window).scrollTop() > 600) {
+        $('.scrollToTop').fadeIn();
+    } else {
+        $('.scrollToTop').fadeOut();
+    }
 });
 
+$(document.body).on('click', '.scrollToTop', function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 800);
+    return false;
+});
 
-//Navbar Fixed Header When Scroll JS
+/****************** Navbar Fixed Header When Scroll JS ********************/
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 100) {
         $('header').addClass('fixed-header');
@@ -44,7 +38,7 @@ $(window).scroll(function(){
     }
 });
 
-//Super Investors Slider JS
+/****************** Super Investors Slider JS ********************/
 $('#super-investors-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
