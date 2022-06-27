@@ -5,19 +5,19 @@
 <!--********************** Main Heading Banner Section ***********************-->
 <section class="home-banner-section banner-section banner-section-auto mb-5">
     <div class="container-fluid custom-container">
-        <div class="row py-4 py-md-5 py-xl-5 mt-md-4 justify-content-start text-center text-md-left">
+        <div class="row py-4 py-md-5 py-xl-5 mt-md-4 justify-content-start">
 
             <div class="col-12">
                 <div class="bg-white p-4 custom-border rounded">
                     <div class="details-main-logo">
                         <img src="./public/images/png/apple-logo.png" width="80" />
                     </div>
-                    <div class="d-flex justify-content-between mt-4 mb-5">
-                        <h2 class="line-height-1 mb-0 align-self-center title-color">
+                    <div class="d-flex justify-content-between mt-4 mb-md-4 flex-wrap">
+                        <h2 class="line-height-1 mb-0 align-self-center title-color mb-3">
                             Apple INC <small class="text-secondary">AAPL</small>
                         </h2>
 
-                        <div class="d-flex">
+                        <div class="d-flex mb-3">
                             <div class="align-self-center">
                                 <a href="javascript:void(0);" class="btn btn-se-light rounded-lg"><i class="fas fa-share-square mr-1"></i> Share</a>
                             </div>
@@ -31,9 +31,33 @@
             </div>
 
             <div class="col-12">
-                <div class="row mx-3 custom-nav-tabs-section">
+                <div class="row mx-md-3 custom-nav-tabs-section">
                     <div class="col-12">
-                        <ul class="nav nav-pills mb-3 custom-nav-tabs bg-white p-2 custom-border rounded" id="pills-tab" role="tablist">
+
+                    <div class="form-inline d-flex d-md-none justify-content-sm-end mt-4">
+                        <label class="my-1 mr-2 h6 title-color" for="more_info_select">Select:</label>
+                        <select class="form-control my-1 mr-sm-2 title-color custom-border font-18 sfpro-medium font-smooth" id="more_info_select">
+                            <option value='0'>Overview</option>
+                            <option value='1'>Compliance</option>
+                            <option value='2'>Analysts' Ratings</option>
+                            <option value='3'>Forecasts</option>
+                            <option value='4'>Insider Transactions</option>
+                            <option value='5'>Ownership</option>
+                            <option value='6'>Related Companies</option>
+                            <option value='7'>Latest News</option>
+                            <option value='8'>Press Releases</option>
+                        </select>
+                    </div>
+
+                        <!-- <div class="form-inline d-block d-md-none">
+                            <label class="my-1 mr-2 h6 title-color" for="more_info_select">Select for more info:</label>
+                            <select class="form-control my-1 mr-sm-2 w-100 title-color custom-border font-18 sfpro-medium font-smooth" id="more_info_select">
+                                <option value='0'>Overview</option>
+                                <option value='1'>Compliance</option>
+                            </select>
+                        </div> -->
+
+                        <ul class="nav nav-pills mb-3 custom-nav-tabs bg-white p-2 custom-border rounded d-none d-md-flex" id="more_info_tabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="pills-overview-tab" data-toggle="pill" href="#pills-overview" role="tab" aria-controls="pills-overview" aria-selected="true">Overview</a>
                             </li>
@@ -64,15 +88,130 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab-content mt-5" id="pills-tabContent">
+                <div class="tab-content mt-4 mt-md-5" id="pills-tabContent">
 
                     <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
+
+                                <!-- Chart Card -->
+                                <div class="bg-white custom-border rounded-lg p-4 mt-2">
+                                    <h4 class="title-color">Chart</h4>
+                                </div>
+
+                                <!-- Company Profile Card -->
+                                <div class="bg-white custom-border rounded-lg p-4 custom-margin-top">
+
+                                    <h4 class="title-color">Company Profile</h4>
+
+                                    <p class="title-color h6 font-smooth custom-margin-top line-height-2">Apple Inc. designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services. iPhone is the Company's line <span class="dots-show-hide"></span><span class="show-more-text">of smartphones based on its iOS operating system. Mac is the Company's line of personal computers based on its macOS operating system. iPad is the Company's line of multi-purpose tablets based on its iPadOS operating system.</span><a href="javascript:void(0);" class="btn-show-hide custom-light-green ml-1">Show more...</a></p>
+
+                                    <div class="custom-margin-top">
+                                        <div class="row">
+                                            <div class="col-md-6 align-self-center">
+
+                                                <div class="custom-slider mb-5">
+                                                    <h6 class="text-secondary font-smooth">Today's Range</h6>
+                                                    <div class="custom-rangeslider mt-3">
+                                                        <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="0" max="100" value="70" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                                        <span class="custom-rangeslider-tooltip">0</span>
+                                                        <span class="custom-rangeslider-label mt-n3">
+                                                            <span class="custom-rangeslider-label-min title-color">$32.55</span>
+                                                            <span class="custom-rangeslider-label-max">$52.56</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-bg-light-green p-3 border-radius-10 mb-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <span class="text-secondary">Today's Open</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="title-color sfpro-medium">$45.85</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-bg-light-green p-3 border-radius-10 mb-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <span class="text-secondary">Volume</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="title-color sfpro-medium">67.43M</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-bg-light-green p-3 border-radius-10">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <span class="text-secondary">P/E Ratio (TTM)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="title-color sfpro-medium">28.17</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-6 align-self-center">
+
+                                                <div class="custom-slider mb-5">
+                                                    <h6 class="text-secondary font-smooth">52 Week Range</h6>
+                                                    <div class="custom-rangeslider mt-3">
+                                                        <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="0" max="100" value="50" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                                        <span class="custom-rangeslider-tooltip">0</span>
+                                                        <span class="custom-rangeslider-label mt-n3">
+                                                            <span class="custom-rangeslider-label-min title-color">$32.55</span>
+                                                            <span class="custom-rangeslider-label-max">$52.56</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-bg-light-green p-3 border-radius-10 mb-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <span class="text-secondary">Market Cap</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="title-color sfpro-medium">2.67T</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-bg-light-green p-3 border-radius-10 mb-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <span class="text-secondary">Avg. Volume</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="title-color sfpro-medium">90.79M</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-bg-light-green p-3 border-radius-10">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <span class="text-secondary">Dividend Yeild</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="title-color sfpro-medium">0.17%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
 
                                 <!-- Analysts’ Ratings Card -->
-                                <div class="bg-white custom-border rounded-lg p-4 mt-2">
+                                <div class="bg-white custom-border rounded-lg p-4 custom-margin-top">
 
                                     <div class="d-flex justify-content-between mb-2">
                                         <h4 class="title-color mb-0">Analysts' Ratings</h4>
@@ -101,7 +240,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-2 align-self-center text-right">
-                                                <p class="font-18 mb-0 title-color">8.00%</p>
+                                                <p class="percentshow font-18 mb-0 title-color" data-percentNumber="8"></p>
                                             </div>
                                         </div>
 
@@ -111,17 +250,13 @@
                                             </div>
                                             <div class="col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
-                                                    <!--<div class="title">
-                                                        <h3>web design</h3>
-                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
-                                                    </div>-->
                                                     <div class="barline">
                                                         <div class="countbar" data-percentBarline="7"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 align-self-center text-right">
-                                                <p class="font-18 mb-0 title-color">7.40%</p>
+                                                <p class="percentshow font-18 mb-0 title-color" data-percentNumber="7"></p>
                                             </div>
                                         </div>
 
@@ -131,17 +266,13 @@
                                             </div>
                                             <div class="col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
-                                                    <!--<div class="title">
-                                                        <h3>web design</h3>
-                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
-                                                    </div>-->
                                                     <div class="barline">
                                                         <div class="countbar hold" data-percentBarline="1"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 align-self-center text-right">
-                                                <p class="font-18 mb-0 title-color">0.00%</p>
+                                                <p class="percentshow font-18 mb-0 title-color" data-percentNumber="1"></p>
                                             </div>
                                         </div>
 
@@ -151,17 +282,13 @@
                                             </div>
                                             <div class="col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
-                                                    <!--<div class="title">
-                                                        <h3>web design</h3>
-                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
-                                                    </div>-->
                                                     <div class="barline">
                                                         <div class="countbar sell" data-percentBarline="1"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 align-self-center text-right">
-                                                <p class="font-18 mb-0 title-color">0.00%</p>
+                                                <p class="percentshow font-18 mb-0 title-color" data-percentNumber="1"></p>
                                             </div>
                                         </div>
 
@@ -171,17 +298,13 @@
                                             </div>
                                             <div class="col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
-                                                    <!--<div class="title">
-                                                        <h3>web design</h3>
-                                                        <h3 class="percentshow" data-percentNumber="90"></h3>
-                                                    </div>-->
                                                     <div class="barline">
                                                         <div class="countbar strong-sell" data-percentBarline="1"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 align-self-center text-right">
-                                                <p class="font-18 mb-0 title-color">0.00%</p>
+                                                <p class="percentshow font-18 mb-0 title-color" data-percentNumber="1"></p>
                                             </div>
                                         </div>
                                         
@@ -190,7 +313,7 @@
 
                                 </div>
 
-                                <!-- Related Stocks Card -->
+                                <!-- Related Stocks Table -->
                                 <div class="bg-white custom-border rounded-lg p-4 custom-margin-top">
 
                                     <h2 class="title-color">Related Stocks</h2>
@@ -198,14 +321,14 @@
                                     <div class="custom-margin-top">
                                         <div class="d-flex justify-content-between mb-3">
 
-                                            <div class="table-responsive-sm">
+                                            <div class="table-responsive">
                                                 <table class="table table-hover tbl-related-stocks">
                                                     <thead>
                                                         <tr>
                                                             <th class="border-0" scope="col"><span class="text-secondary h5 font-smooth">Name</span></th>
                                                             <th class="border-0" scope="col"><span class="text-secondary h5 font-smooth">Price</span></th>
                                                             <th class="border-0" scope="col"><span class="text-secondary h5 font-smooth">Change</span></th>
-                                                            <th class="border-0" scope="col"><span class="text-secondary h5 font-smooth">Shariah compliance</span></th>
+                                                            <th class="border-0 text-center" scope="col"><span class="text-secondary h5 font-smooth">Shariah compliance</span></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -380,7 +503,7 @@
 
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-lg-4 mt-4 mt-lg-0">
 
                                 <!-- Compliance Card -->
                                 <div class="bg-white custom-border rounded-lg p-4 mt-2">

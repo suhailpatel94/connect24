@@ -111,8 +111,10 @@ body{
 /********** New Css **********/
 
 .custom-container {
-  padding-left: 110px;
-  padding-right: 110px;
+  @include media-breakpoint-up(md) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .title-color {
@@ -174,6 +176,14 @@ body{
 .font-smooth {
   //-webkit-transform: translateZ(0); /* webkit flicker fix */
   -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+select {
+  &.form-control {
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 /********** New Css Ends **********/

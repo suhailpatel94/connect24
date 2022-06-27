@@ -38,6 +38,13 @@ $(window).scroll(function(){
     }
 });
 
+
+/****************** Nav Tabs Mobile Dropdownn JS ********************/
+$('#more_info_select').on('change', function (e) {
+    $('#more_info_tabs li a').eq($(this).val()).tab('show'); 
+});
+
+
 /****************** Super Investors Slider JS ********************/
 $('#super-investors-slider').slick({
     slidesToShow: 2,
@@ -50,10 +57,17 @@ $('#super-investors-slider').slick({
     nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
     responsive: [
         {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
             breakpoint: 991,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 3,
+                slidesToScroll: 1
             }
         },
         {
@@ -66,7 +80,7 @@ $('#super-investors-slider').slick({
     ]
 });
 
-
+/****************** Progress JS ********************/
 let percentShow = document.querySelectorAll('.percentshow');
 let getPercentShow = Array.from(percentShow);
 
@@ -77,7 +91,7 @@ getPercentShow.map((viewPercen) => {
     let startCount = 0;
     let progressPercentCount = () => {
         startCount ++;
-        viewPercen.innerHTML = `${startCount}%`;
+        viewPercen.innerHTML = `${startCount}.00%`;
         if(startCount == viewPercen.dataset.percentnumber){
             clearInterval(percentStop);
         }
@@ -88,11 +102,11 @@ getPercentShow.map((viewPercen) => {
 })
 
 getPercent.map((viewline) => {
-    console.log(viewline.dataset.percentbarline)
+    //console.log(viewline.dataset.percentbarline)
     let countStart = 0;
     let progressbar = () => {
         countStart ++;
-        viewline.style.width = `${countStart}%`;
+        viewline.style.width = `${countStart}.00%`;
         if(countStart == viewline.dataset.percentbarline) {
             clearInterval(viewlineStop);
         }
@@ -101,3 +115,21 @@ getPercent.map((viewline) => {
         progressbar();
     },20)
 })
+
+
+/****************** Show More Text JS ********************/
+$('.btn-show-hide').on('click', function(){
+    var dots = document.getElementsByClassName("dots-show-hide")[0];
+    var moreText = document.getElementsByClassName("show-more-text")[0];
+    var btnText = document.getElementsByClassName("btn-show-hide")[0];
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more..."; 
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less"; 
+        moreText.style.display = "inline";
+    }
+});

@@ -254,8 +254,10 @@ body {
 
 /**************** Tabs Section Css ****************/
 .custom-nav-tabs-section {
-	position: absolute;
-	top: -30px;
+	@include media-breakpoint-up(md) {
+		position: absolute;
+		top: -30px;
+	}
 	.custom-nav-tabs {
 		.nav-item {
 			border-right: 1px solid #DFDFEC;
@@ -424,15 +426,6 @@ body {
 
 /********* Custom Progress Bar Css *********/  
 .custom-progress {
-	.title {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 10px;
-		h3 {
-			font-size: 25px;
-			text-transform: capitalize;
-		}
-	}
 	.barline {
 		height: 3px;
 		background: #DFDFEC;
@@ -481,5 +474,10 @@ body {
 			}
 		}
 	}
+}
 
+
+/********* Show/Hide Text Css *********/  
+.show-more-text {
+	display: none;
 }

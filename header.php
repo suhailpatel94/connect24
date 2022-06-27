@@ -62,7 +62,7 @@
 </section>
 
 <header class="sustaineverse-navbar">
-    <nav class="navbar navbar-expand-md py-md-0" id="mainNav">
+    <nav class="navbar navbar-expand-md py-md-0 d-none" id="mainNav">
         <div class="justify-content-md-around aos-init aos-animate px-2 w-100" data-aos="fade-in">
 
             <div class="row">
