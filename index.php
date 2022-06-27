@@ -157,7 +157,7 @@
                                                 </div>
                                                 
                                             </div>
-                                            <div class="col-md-6 align-self-center">
+                                            <div class="col-md-6 align-self-center mt-5 mt-md-0">
 
                                                 <div class="custom-slider mb-5">
                                                     <h6 class="text-secondary font-smooth">52 Week Range</h6>
@@ -213,9 +213,9 @@
                                 <!-- Analysts’ Ratings Card -->
                                 <div class="bg-white custom-border rounded-lg p-4 custom-margin-top">
 
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <h4 class="title-color mb-0">Analysts' Ratings</h4>
-                                        <a href="javascript:void(0);" class="custom-bg-light-green py-2 px-4 border-radius-10 text-center no-underline">
+                                    <div class="d-flex flex-wrap justify-content-between mb-2">
+                                        <h4 class="title-color mb-2 align-self-center">Analysts' Ratings</h4>
+                                        <a href="javascript:void(0);" class="mb-2 custom-bg-light-green py-2 px-4 border-radius-10 text-center no-underline">
                                             <h5 class="custom-light-green mb-0">Strong Buy</h5>
                                         </a>
                                     </div>
@@ -225,10 +225,10 @@
                                     <div class="custom-margin-top">
                                         
                                         <div class="row justify-content-between mb-4">
-                                            <div class="col-md-2 align-self-center">
+                                            <div class="col-12 col-sm-3 col-md-2 align-self-center">
                                                 <h5 class="font-18 mb-0 title-color">Strong buy</h5>
                                             </div>
-                                            <div class="col-md-8 align-self-center text-right">
+                                            <div class="col-9 col-sm-7 col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
                                                     <!--<div class="title">
                                                         <h3>web design</h3>
@@ -239,76 +239,75 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 align-self-center text-right">
+                                            <div class="col-3 col-sm-2 align-self-center text-right">
                                                 <p class="percentshow font-18 mb-0 title-color" data-percentNumber="8"></p>
                                             </div>
                                         </div>
 
                                         <div class="row justify-content-between mb-4">
-                                            <div class="col-md-2 align-self-center">
+                                            <div class="col-12 col-sm-3 col-md-2 align-self-center">
                                                 <h5 class="font-18 mb-0 title-color">Buy</h5>
                                             </div>
-                                            <div class="col-md-8 align-self-center text-right">
+                                            <div class="col-9 col-sm-7 col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
                                                     <div class="barline">
                                                         <div class="countbar" data-percentBarline="7"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 align-self-center text-right">
+                                            <div class="col-3 col-sm-2 align-self-center text-right">
                                                 <p class="percentshow font-18 mb-0 title-color" data-percentNumber="7"></p>
                                             </div>
                                         </div>
 
                                         <div class="row justify-content-between mb-4">
-                                            <div class="col-md-2 align-self-center">
+                                            <div class="col-12 col-sm-3 col-md-2 align-self-center">
                                                 <h5 class="font-18 mb-0 title-color">Hold</h5>
                                             </div>
-                                            <div class="col-md-8 align-self-center text-right">
+                                            <div class="col-9 col-sm-7 col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
                                                     <div class="barline">
                                                         <div class="countbar hold" data-percentBarline="1"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 align-self-center text-right">
+                                            <div class="col-3 col-sm-2 align-self-center text-right">
                                                 <p class="percentshow font-18 mb-0 title-color" data-percentNumber="1"></p>
                                             </div>
                                         </div>
 
                                         <div class="row justify-content-between mb-4">
-                                            <div class="col-md-2 align-self-center">
+                                            <div class="col-12 col-sm-3 col-md-2 align-self-center">
                                                 <h5 class="font-18 mb-0 title-color">Sell</h5>
                                             </div>
-                                            <div class="col-md-8 align-self-center text-right">
+                                            <div class="col-9 col-sm-7 col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
                                                     <div class="barline">
                                                         <div class="countbar sell" data-percentBarline="1"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 align-self-center text-right">
+                                            <div class="col-3 col-sm-2 align-self-center text-right">
                                                 <p class="percentshow font-18 mb-0 title-color" data-percentNumber="1"></p>
                                             </div>
                                         </div>
 
                                         <div class="row justify-content-between mb-4">
-                                            <div class="col-md-2 align-self-center">
+                                            <div class="col-12 col-sm-3 col-md-2 align-self-center">
                                                 <h5 class="font-18 mb-0 title-color">Strong Sell</h5>
                                             </div>
-                                            <div class="col-md-8 align-self-center text-right">
+                                            <div class="col-9 col-sm-7 col-md-8 align-self-center text-right">
                                                 <div class="custom-progress">
                                                     <div class="barline">
                                                         <div class="countbar strong-sell" data-percentBarline="1"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 align-self-center text-right">
+                                            <div class="col-3 col-sm-2 align-self-center text-right">
                                                 <p class="percentshow font-18 mb-0 title-color" data-percentNumber="1"></p>
                                             </div>
                                         </div>
-                                        
-                                        
+ 
                                     </div>
 
                                 </div>
