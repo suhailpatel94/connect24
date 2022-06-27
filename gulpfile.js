@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
@@ -12,7 +12,7 @@ var reload = browserSync.reload;
 
 gulp.task('styles', function () {
   return gulp.src('./assets/sass/app.scss')
-    .pipe(sass.sync())
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefix())
     .pipe(csso())
     .pipe(gulp.dest('./public/css/'))
